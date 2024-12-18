@@ -5,7 +5,7 @@ data "oci_identity_availability_domains" "ads" {
 data "oci_core_images" "centos_image" {
   compartment_id = var.compartment_ocid
   operating_system = "Canonical Ubuntu"
-  operating_system_version = "18.04"
+  operating_system_version = "22.04"
   shape = "VM.Standard2.1"
   sort_by = "TIMECREATED"
 }
